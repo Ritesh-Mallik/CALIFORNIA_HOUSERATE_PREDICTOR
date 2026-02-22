@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Desktop/templates"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Adlab website"
+	}
+}

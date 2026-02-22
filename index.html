@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>California Housing ML App</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f0f2f5;
+        }
+        input {
+            margin: 5px;
+            padding: 8px;
+            width: 250px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        h2 {
+            color: darkblue;
+        }
+        .container {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>California Housing Price Classification</h2>
+    
+    <form action="/predict" method="post">
+        <input type="text" name="MedInc" placeholder="Median Income"><br>
+        <input type="text" name="HouseAge" placeholder="House Age"><br>
+        <input type="text" name="AveRooms" placeholder="Average Rooms"><br>
+        <input type="text" name="AveBedrms" placeholder="Average Bedrooms"><br>
+        <input type="text" name="Population" placeholder="Population"><br>
+        <input type="text" name="AveOccup" placeholder="Average Occupancy"><br>
+        <input type="text" name="Latitude" placeholder="Latitude"><br>
+        <input type="text" name="Longitude" placeholder="Longitude"><br><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+    
+    <h3>{{ prediction_text }}</h3>
+</div>
+
+</body>
+</html>
